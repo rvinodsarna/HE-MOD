@@ -1,0 +1,34 @@
+# Create defense_notes.txt
+(
+echo HE-MOD PhD DEFENSE - QUICK REFERENCE
+echo ====================================
+echo.
+echo GITHUB REPOSITORY:
+echo https://github.com/rvinodsarna/HE-MOD
+echo.
+echo DEMONSTRATION COMMANDS:
+echo 1. Verify implementation: python verify_hemod.py
+echo 2. Show performance: python -c "from src.hemod.model import HEMOD; m = HEMOD(); print(m.evaluate())"
+echo 3. Check proofs: type proofs\\benchmarks\\results.txt
+echo.
+echo KEY METRICS:
+echo - mAP: 89.2%% (accuracy)
+echo - IDF1: 80.2%% (tracking, +28.5%% improvement)
+echo - FPS: 28 (real-time)
+echo - SGO: 0.82 (explainability, 2× baseline)
+echo - VRAM: 4.8GB (edge-deployable)
+echo.
+echo INNOVATIONS:
+echo 1. Resolved MOD's triple crisis
+echo 2. Weighted fusion: 0.6*CNN + 0.25*Flow + 0.15*Kalman
+echo 3. Statistical validation: p<0.001, power=80%%
+echo.
+echo COMMITTEE QUESTIONS:
+echo - Implementation: src/hemod/
+echo - Evidence: proofs/
+echo - Validation: proofs/statistical_validation/
+echo - Compliance: proofs/legal_compliance/
+) > defense_notes.txt
+
+# Show it
+type defense_notes.txt
