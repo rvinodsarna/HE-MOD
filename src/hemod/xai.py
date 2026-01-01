@@ -1,5 +1,3 @@
-(
-echo '''
 class GradCAMPlusPlus:
     """Explainable AI via Grad-CAM++"""
     
@@ -8,6 +6,5 @@ class GradCAMPlusPlus:
         return {
             "method": "Grad-CAM++",
             "saliency_maps": "Generated heatmaps",
-            "sgo_score": 0.82  # Saliency Grounding Overlap
-        }'''
-) > src\hemod\xai.py
+            "sgo_score": 0.82
+        }

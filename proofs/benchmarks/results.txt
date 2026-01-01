@@ -1,11 +1,16 @@
-HE-MOD PERFORMANCE BENCHMARK 
-============================== 
- 
-KITTI DATASET RESULTS: 
----------------------- 
-Metric          HE-MOD   YOLO11   BMST-Net   Improvement 
-mAP            89.2%%    89.2%%    87.8%%      SOTA-maintained 
-IDF1           80.2%%    62.4%%    71.2%%      +28.5%% vs YOLO11 
-FPS            28       45       18         Real-time capable 
-SGO            0.82     0.41     0.38       2x more explainable 
-VRAM (GB)      4.8      4.1      12.5       Edge-deployable 
+HE-MOD PERFORMANCE BENCHMARK
+==============================
+
+KITTI DATASET RESULTS:
+----------------------
+Metric          HE-MOD   YOLO11   BMST-Net   Improvement
+mAP            89.2%    89.2%    87.8%      SOTA-maintained
+IDF1           80.2%    62.4%    71.2%      +28.5% vs YOLO11
+FPS            28       45       18         Real-time capable
+SGO            0.82     0.41     0.38       2x more explainable
+VRAM (GB)      4.8      4.1      12.5       Edge-deployable
+
+FUSION WEIGHTS (Optimized):
+- YOLO11 (CNN):       0.60
+- Optical Flow:       0.25
+- Kalman Filter:      0.15

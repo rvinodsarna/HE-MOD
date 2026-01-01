@@ -1,5 +1,3 @@
-(
-echo '''
 class WeightedFusion:
     """Weighted fusion of CNN, optical flow, and Kalman predictions"""
     
@@ -11,5 +9,4 @@ class WeightedFusion:
         """Fuse scores with weighted combination"""
         return (self.weights[0] * cnn_scores + 
                 self.weights[1] * flow_scores + 
-                self.weights[2] * kalman_scores)'''
-) > src\hemod\fusion.py
+                self.weights[2] * kalman_scores)

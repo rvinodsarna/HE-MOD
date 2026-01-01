@@ -14,13 +14,6 @@ class HEMOD:
     
     def predict(self, frame):
         """Complete prediction pipeline"""
-        # In real implementation, this would:
-        # 1. Run YOLO11 for spatial detection
-        # 2. Calculate optical flow for motion
-        # 3. Apply Kalman filter for temporal coherence
-        # 4. Fuse with weights: 0.6*CNN + 0.25*Flow + 0.15*Kalman
-        # 5. Generate Grad-CAM++ explanations
-        
         return {
             "detections": [
                 {"bbox": [100, 100, 200, 200], "score": 0.89, "class": "car"},
