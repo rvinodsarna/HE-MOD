@@ -1,0 +1,7 @@
+WEIGHT OPTIMIZATION STUDY 
+========================== 
+ 
+OPTIMAL WEIGHTS FOUND: 
+CNN (YOLO11):   0.60 
+Optical Flow:   0.25 
+Kalman Filter:  0.15 

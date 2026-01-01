@@ -1,0 +1,6 @@
+LEGAL COMPLIANCE 
+================ 
+ 
+DATASET LICENSES: 
+- KITTI: CC BY-NC-SA 3.0 (academic use only) 
+- MOT20: Academic research license 

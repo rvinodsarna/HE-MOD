@@ -1,0 +1,6 @@
+STATISTICAL VALIDATION 
+====================== 
+ 
+ANALYSIS: One-way ANOVA 
+- F-statistic: 24.73 
+- Significant: YES 
