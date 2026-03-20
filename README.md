@@ -1,5 +1,3 @@
-**Edit README.md → Paste this:**
-
 # HE-MOD: Hybrid Explainable Multi-Object Tracking Framework
 
 **First framework** (7,166 paper SLR = 0 prior art):
