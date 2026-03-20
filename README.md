@@ -1,3 +1,5 @@
+# **📥 HE-MOD_README.md 
+
 # HE-MOD: Hybrid Explainable Multi-Object Tracking Framework
 
 **Candidate:** Vinod Ramanathan  
@@ -9,25 +11,24 @@
 **First framework (7,166 paper SLR = 0 prior art):**  
 Validated Detector XAI + Sanity Checks + Temporal Analysis + Failure Prediction
 
-## 📊 KEY NOVELTY - SLR CONFIRMED (Table 6.1)
+## 📊 KEY NOVELTY - SLR CONFIRMED
 
 **PRISMA 2020: 7,166 papers → 0 integrated systems**
 
-| Database          | Query                      | Total Hits | 4-Criteria Intersection |
-|-------------------|----------------------------|------------|-------------------------|
-| **IEEE Xplore**   | XAI ∧ MOT ∧ Temporal       | 61,094     | **5 papers**            |
-| **ACM DL**        | XAI ∧ MOT ∧ Temporal       | 829K corpus| **249→3 relevant**      |
-| **arXiv cs.CV**   | "explainable object detection" | **375** | **2 relevant**          |
-| **Google Scholar**| Full 3-way query          | **~6,910** | **<20 relevant**        |
-| **TOTAL**         | **7,166 screened**         | -          | **0/7,166**             |
+| Database | Query | Total Hits | 4-Criteria Intersection |
+|----------|-------|------------|-------------------------|
+| **IEEE Xplore** | XAI ∧ MOT ∧ Temporal | 61,094 | **5 papers** |
+| **ACM DL** | XAI ∧ MOT ∧ Temporal | 829K corpus | **249→3 relevant** |
+| **arXiv cs.CV** | "explainable object detection" | **375** | **2 relevant** |
+| **Google Scholar** | Full 3-way query | **~6,910** | **<20 relevant** |
+| **TOTAL** | **7,166 screened** | - | **0/7,166** |
 
-**CRITERIA BREAKDOWN:**
-| Criteria            | Papers | %      |
-|---------------------|--------|--------|
-| **All 4 criteria**  | **0**  | **0.00%** |
-| **Detector XAI**    | **12** | **0.17%** |
-| **Tracking + XAI**  | **3**  | **0.04%** |
-| **Temporal XAI**    | **0**  | **0.00%** |
+| Criteria | Papers | % |
+|----------|--------|----|
+| **All 4 criteria** | **0** | **0.00%** |
+| **Detector XAI** | **12** | **0.17%** |
+| **Tracking + XAI** | **3** | **0.04%** |
+| **Temporal XAI** | **0** | **0.00%** |
 | **Predictive Failure** | **0** | **0.00%** |
 
 **arXiv VALIDATION:**
@@ -40,7 +41,7 @@ Q3: "object detector" "saliency map" → 8 hits
 
 ```
 
-## 🏗️ SIX-LAYER FRAMEWORK [Figure 7.1]
+## 🏗️ SIX-LAYER FRAMEWORK
 
 ```
 
@@ -55,21 +56,21 @@ Layer 6: Logistic → Failure Prediction (H₁: AUC>0.7) 💎
 
 ## 🎯 DEPLOYMENT MODES
 
-| Mode    | Layers | FPS Target (RTX 3060) | Use Case          |
-|---------|--------|----------------------|-------------------|
-| Mode 1  | 1-2    | 40 FPS              | Real-time tracking|
-| Mode 2  | 1-4    | 22 FPS              | Validated XAI     |
-| **Mode 3** | **1-6** | **≥20 FPS**       | **Full HE-MOD**   |
+| Mode | Layers | FPS Target | Use Case |
+|------|--------|------------|----------|
+| Mode 1 | 1-2 | 40 FPS | Real-time tracking |
+| Mode 2 | 1-4 | 22 FPS | Validated XAI |
+| **Mode 3** | **1-6** | **≥20 FPS** | **Full HE-MOD** |
 
 ## 📋 EVALUATION PROTOCOL
 
-| Metric          | HE-MOD Target | Rationale              |
-|-----------------|---------------|------------------------|
-| MOTA drop       | **<20%**      | Tracking stability     |
-| IDF1 drop       | **<25%**      | Identity preservation  |
-| IDSW increase   | **<30%**      | Switch tolerance       |
-| XAI Sanity (SSIM)| **≥40%**     | Adebayo validation     |
-| Prediction AUC  | **>0.7**      | H₁ confirmation        |
+| Metric | HE-MOD Target | Rationale |
+|--------|---------------|-----------|
+| MOTA drop | **<20%** | Tracking stability |
+| IDF1 drop | **<25%** | Identity preservation |
+| IDSW increase | **<30%** | Switch tolerance |
+| XAI Sanity | **≥40%** | Adebayo validation |
+| Prediction AUC | **>0.7** | H₁ confirmation |
 
 ## 🔬 RESEARCH QUESTIONS
 
@@ -82,16 +83,15 @@ Layer 6: Logistic → Failure Prediction (H₁: AUC>0.7) 💎
 
 - **Repository:** https://github.com/rvinodsarna/HE-MOD
 - **TechRxiv:** DOI forthcoming (March 21, 2026)
-- **UNIMY PhD:** Computing & Digital Innovation
 - **Supervisor:** Prof. Dr. Habibollah Haron
+- **UNIMY:** Computing & Digital Innovation
 
 ---
 
 **Universiti Malaysia of Computer Science & Engineering (UNIMY)**  
-**Level 1 & 2, VSQ@PJ City Centre, Jalan Utara, Section 14**  
-**46200 Petaling Jaya, Selangor, Malaysia**  
-**Research Base:** Puchong, Selangor Darul Ehsan  
-**First Publication:** March 21, 2026 | 00:44 AM +08
+Level 1 & 2, VSQ@PJ City Centre, Jalan Utara, Section 14  
+46200 Petaling Jaya, Selangor, Malaysia  
+**Research Base:** Puchong, Selangor  
+**First Publication:** March 21, 2026 | 00:52 AM +08
 ```
-
 
