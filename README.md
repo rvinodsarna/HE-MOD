@@ -1,4 +1,4 @@
-# **📥 HE-MOD_README.md 
+# 📥 HE-MOD_README.md 
 
 # HE-MOD: Hybrid Explainable Multi-Object Tracking Framework
 
