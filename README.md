@@ -1,6 +1,6 @@
 # 📥 HE-MOD_README.md 
 
-# HE-MOD: Hybrid Explainable Multi-Object Tracking Framework
+# HE-MOD: Hybrid Explainable Multi-Object Tracking Framework with Temporal XAI Failure Prediction 
 
 **Candidate:** Vinod Ramanathan  
 **Supervisor:** Prof. Dr. Habibollah Haron  
