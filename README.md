@@ -53,7 +53,7 @@ text
 - **Repository:** [github.com/rvinodsarna/HE-MOD](https://github.com/rvinodsarna/HE-MOD)
 - **Institution:** UNIMY Computing PhD Programme
 - **Location:** Puchong, Selangor, Malaysia
-- **Contact:** `vinod.ramanathan@unimy.edu.my`
+- **Contact:** `25093879@student.unimy.edu.my`
 
 ---
 
