@@ -19,13 +19,12 @@ HE-MOD delivers a **production-ready MOT system** with **consumer-grade deployme
 | **Mode 3** | Full pipeline | **≥20 FPS** | Production deployment |
 
 ## ⚙️ **Tech Stack**
-Layer 1: YOLOv8-s (80 FPS baseline)
-Layer 2: DeepSORT (Kalman + appearance)
-Layer 3: Grad-CAM++ (per-object heatmaps)
-Layer 4: Adebayo sanity (SSIM ≥40%)
-Deployment: RTX 3060 12GB (RM1,800)
 
-text
+- **Layer 1:** YOLOv8-s (80 FPS baseline)
+- **Layer 2:** DeepSORT (Kalman + appearance)
+- **Layer 3:** Grad-CAM++ (per-object heatmaps)
+- **Layer 4:** Adebayo sanity (SSIM ≥40%)
+- **Deployment:** RTX 3060 12GB (RM1,800)
 
 ## 📊 **Target Performance**
 
