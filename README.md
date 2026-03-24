@@ -1,6 +1,4 @@
-# 📥 HE-MOD_README.md 
-
-# HE-MOD: Hybrid Explainable Multi-Object Tracking Framework with Temporal XAI Failure Prediction 
+# HE-MOD: Hybrid Explainable Multi-Object Tracking Framework
 
 **Candidate:** Vinod Ramanathan  
 **Supervisor:** Prof. Dr. Habibollah Haron  
@@ -8,90 +6,57 @@
 **Location:** Puchong, Selangor, Malaysia  
 **Date:** March 2026
 
-**First framework (7,166 paper SLR = 0 prior art):**  
-Validated Detector XAI + Sanity Checks + Temporal Analysis + Failure Prediction
+## 🚀 **Focus: Real-Time Validated XAI Pipeline**
 
-## 📊 KEY NOVELTY - SLR CONFIRMED
+HE-MOD delivers a **production-ready MOT system** with **consumer-grade deployment** (RTX 3060, ≥20 FPS target) featuring **Grad-CAM++ explanations** validated via **Adebayo sanity checks**.
 
-**PRISMA 2020: 7,166 papers → 0 integrated systems**
+## 🏗️ **HE-MOD Deployment Modes**
 
-| Database | Query | Total Hits | 4-Criteria Intersection |
-|----------|-------|------------|-------------------------|
-| **IEEE Xplore** | XAI ∧ MOT ∧ Temporal | 61,094 | **5 papers** |
-| **ACM DL** | XAI ∧ MOT ∧ Temporal | 829K corpus | **249→3 relevant** |
-| **arXiv cs.CV** | "explainable object detection" | **375** | **2 relevant** |
-| **Google Scholar** | Full 3-way query | **~6,910** | **<20 relevant** |
-| **TOTAL** | **7,166 screened** | - | **0/7,166** |
+| **Mode** | **Layers** | **FPS Target** | **Use Case** |
+|----------|------------|----------------|--------------|
+| **Mode 1** | Detection + Tracking | **40 FPS** | Pure real-time MOT |
+| **Mode 2** | + Validated XAI | **22 FPS** | Explainable tracking |
+| **Mode 3** | Full pipeline | **≥20 FPS** | Production deployment |
 
-| Criteria | Papers | % |
-|----------|--------|----|
-| **All 4 criteria** | **0** | **0.00%** |
-| **Detector XAI** | **12** | **0.17%** |
-| **Tracking + XAI** | **3** | **0.04%** |
-| **Temporal XAI** | **0** | **0.00%** |
-| **Predictive Failure** | **0** | **0.00%** |
+## ⚙️ **Tech Stack**
+Layer 1: YOLOv8-s (80 FPS baseline)
+Layer 2: DeepSORT (Kalman + appearance)
+Layer 3: Grad-CAM++ (per-object heatmaps)
+Layer 4: Adebayo sanity (SSIM ≥40%)
+Deployment: RTX 3060 12GB (RM1,800)
 
-**arXiv VALIDATION:**
-```
+text
 
-Q1: "explainable object detection" → 375 hits
-Q2: XAI + (detection/tracking) → ~200 hits
-Q3: "object detector" "saliency map" → 8 hits
-→ 0 papers meet all 4 criteria
+## 📊 **Target Performance**
 
-```
+| **Metric** | **Target** | **Hardware** |
+|------------|------------|--------------|
+| End-to-End FPS | **≥20** | RTX 3060 |
+| Sanity Check | **SSIM ≥40%** | Adebayo validation |
+| Latency | **<50ms** | Frame processing |
 
-## 🏗️ SIX-LAYER FRAMEWORK
+## 🎯 **Smart City Applications**
 
-```
+- **Traffic monitoring** (UA-DETRAC benchmark)
+- **CCTV surveillance** (Malaysian urban proxy)
+- **Automated toll collection**
+- **Public safety analytics**
 
-Layer 1: YOLOv8 → Real-time detection (RTX 3060: 80 FPS)
-Layer 2: DeepSORT → Track association (Kalman + Hungarian)
-Layer 3: Grad-CAM++ → Per-object XAI heatmaps
-Layer 4: Adebayo → Sanity checks (SSIM≥40%, ECI≥0.7)
-Layer 5: Temporal → Explanation metrics (Entropy/Focus/Variation) ✨
-Layer 6: Logistic → Failure Prediction (H₁: AUC>0.7) 💎
+## 🔬 **Research Questions**
 
-```
+1. Can validated XAI maintain real-time MOT performance?
+2. Does explanation quality correlate with tracking stability?
+3. How do sanity checks impact deployment latency?
 
-## 🎯 DEPLOYMENT MODES
+## 🔗 **Resources**
 
-| Mode | Layers | FPS Target | Use Case |
-|------|--------|------------|----------|
-| Mode 1 | 1-2 | 40 FPS | Real-time tracking |
-| Mode 2 | 1-4 | 22 FPS | Validated XAI |
-| **Mode 3** | **1-6** | **≥20 FPS** | **Full HE-MOD** |
-
-## 📋 EVALUATION PROTOCOL
-
-| Metric | HE-MOD Target | Rationale |
-|--------|---------------|-----------|
-| MOTA drop | **<20%** | Tracking stability |
-| IDF1 drop | **<25%** | Identity preservation |
-| IDSW increase | **<30%** | Switch tolerance |
-| XAI Sanity | **≥40%** | Adebayo validation |
-| Prediction AUC | **>0.7** | H₁ confirmation |
-
-## 🔬 RESEARCH QUESTIONS
-
-1. Can Grad-CAM++ explanations be validated inside MOT pipelines?
-2. Do temporal explanation metrics correlate with tracking stability?
-3. Can explanation behavior predict identity switches/fragmentation?
-4. Does integrated XAI-MOT maintain ≥20 FPS real-time?
-
-## 🔗 RESOURCES
-
-- **Repository:** https://github.com/rvinodsarna/HE-MOD
-- **TechRxiv:** DOI forthcoming (March 21, 2026)
-- **Supervisor:** Prof. Dr. Habibollah Haron
-- **UNIMY:** Computing & Digital Innovation
+- **Repository:** [github.com/rvinodsarna/HE-MOD](https://github.com/rvinodsarna/HE-MOD)
+- **Institution:** UNIMY Computing PhD Programme
+- **Location:** Puchong, Selangor, Malaysia
+- **Contact:** `vinod.ramanathan@unimy.edu.my`
 
 ---
 
-**Universiti Malaysia of Computer Science & Engineering (UNIMY)**  
-Level 1 & 2, VSQ@PJ City Centre, Jalan Utara, Section 14  
-46200 Petaling Jaya, Selangor, Malaysia  
-**Research Base:** Puchong, Selangor  
-**First Publication:** March 21, 2026 | 00:52 AM +08
-```
-
+**UNIMY | Universiti Malaysia of Computer Science & Engineering**  
+**Level 1 & 2, VSQ@PJ City Centre, Jalan Utara, Section 14**  
+**46200 Petaling Jaya, Selangor, Malaysia**
