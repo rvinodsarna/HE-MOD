@@ -96,3 +96,71 @@ pip install -r requirements.txt
 
 # (Optional) Install in editable mode
 pip install -e .
+
+🚀 Quick Start
+bash
+# Run Mode 1 (detection + tracking) on a sample video
+python demo.py --input data/vtest.avi --mode 1
+
+# Run Mode 2 (with Grad‑CAM++ explanations every 10th frame)
+python demo.py --input data/vtest.avi --mode 2 --explain
+
+# Run Mode 3 (full pipeline with sanity validation)
+python demo.py --input data/vtest.avi --mode 3 --sanity
+Outputs:
+
+Annotated video with bounding boxes and track IDs
+
+(Mode 2) Heatmap overlays saved to outputs/heatmaps/
+
+(Mode 3) Sanity report: outputs/sanity/ssim_drop.txt
+
+📁 Repository Structure
+text
+HE-MOD/
+├── configs/           # YAML configs for YOLO, ByteTrack, Grad‑CAM++
+├── data/              # Sample videos and MOT17-02 subset
+├── experiments/       # Ablation scripts (36 configs planned)
+├── notebooks/         # Jupyter notebooks for analysis
+├── proofs/            # Statistical validation (Shapiro‑Wilk, t‑tests)
+├── scripts/           # Utility scripts (download models, preprocess)
+├── src/               # Core Python modules (detection, tracking, xai, sanity)
+├── demo.py            # Main entry point
+├── requirements.txt   # Python dependencies
+├── setup.py           # Installable package
+└── README.md
+📄 Paper & Citation
+The HE‑MOD framework is described in:
+
+V. Ramanathan and H. Haron, “HE‑MOD: Real‑Time Explainable Multi‑Object Tracking with Grad‑CAM++ and Adebayo Sanity Validation,” April 2026. (Under review)
+
+BibTeX entry:
+
+bibtex
+@article{ramanathan2026hemod,
+  title={HE-MOD: Real-Time Explainable Multi-Object Tracking with Grad-CAM++ and Adebayo Sanity Validation},
+  author={Ramanathan, Vinod and Haron, Habibollah},
+  year={2026}
+}
+🔗 Resources
+Repository: github.com/rvinodsarna/HE-MOD
+
+Institution: UNIMY Computing PhD Programme
+
+Location: Level 1 & 2, VSQ@PJ City Centre, Jalan Utara, Section 14, 46200 Petaling Jaya, Selangor, Malaysia
+
+Contact: 25093879@student.unimy.edu.my
+
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+🙏 Acknowledgements
+YOLOv8 by Ultralytics
+
+ByteTrack by Zhang et al. (ECCV 2022)
+
+Grad‑CAM++ by Chattopadhyay et al. (WACV 2018)
+
+Adebayo sanity checks (NeurIPS 2018)
+
+
