@@ -1,4 +1,4 @@
-# HE‑MOD: Hybrid Explainable Multi‑Object Tracking Framework
+# HE‑MOD: Hybrid Explainable Multi‑Object Detection and Tracking Framework
 
 **Candidate:** Vinod Ramanathan  
 **Supervisor:** Prof. Dr. Habibollah Haron  
